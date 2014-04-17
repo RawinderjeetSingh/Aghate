@@ -1,0 +1,32 @@
+LIBELLE	TYPE	LEGENDE	COMMENTAIRES	ABV	SOURCE	COMPDATA
+ref	text		hidden	ref		
+nip	num		hidden	nip		
+nda	num		hidden	nda		
+nohjo	text		hidden	nohjo		
+entry	date		hidden	entry		
+end	date		hidden	end		
+uhdem	text		hidden	uhdem		
+uhexec	text		hidden	uhexec		
+Diagnostics	titre1				forms	
+Diagnostic d'entrée	InputCompletSimple	DP	CODE=CODE1|LIBELLE=LIB|TYPEATTRIBUT=DP|TABLE=cim10spec	dp	codagedp	o
+Pathologies associées	InputCompletMulti	DAS	CODE=CODE1|LIBELLE=LIB|TYPEATTRIBUT=DAS|TABLE=cim10spec	das	codage	
+Provenance du malade	cs	Domicile|SAMU|Autre hopital		provenance	forms	o
+Bloc opératoire	titre1				forms	
+Intervention	text			type_inter	forms	o
+Durée intervention	num	heure(s)		duree_op	forms	
+Secteur	cs	Laennec|Hamburger		secteur	forms
+Transfert à prévoir	cs	Réanimation|USC		transfert	forms
+Contraintes liées à la prise en charge	titre2				forms
+Contraintes liées à la prise en charge	cm	Allergie au latex		latex	forms
+Contraintes liées à la prise en charge	cm	BMR		bmr	forms
+Contraintes liées à la prise en charge	cm	Sérologies		sero	forms
+Contraintes liées à la prise en charge	cm	Hyperanxiété		hyperanx	forms
+Contraintes liées à la prise en charge	cm	Autres		autres	forms
+Sortie et post-hospitalisation	titre1				
+Sortie prévue	cs	A domicile| SSR | Long séjour		ms	forms
+Date du rendez vous post-opératoire	Date			c_postop	forms
+A revoir en consultation d'anesthésie	cs	Oui|Non		c_anes_revoir	forms
+Motif	text			c_anes_revoir_motif	forms
+Délai	num		jour	c_anes_revoir_delai	forms
+Date consultation	Date			c_anes_date	forms
+Remarques	text			c_anes_rem	forms
