@@ -28,6 +28,8 @@ if (isset($period)) $end_period = $period;
 $edit_type = isset($_GET["edit_type"]) ? $_GET["edit_type"] : NULL;
 if(!isset($edit_type)) $edit_type = "";
 
+//test
+
 // si $edit_type = "series", cela signifie qu'on édite une "périodicité"
 $page = verif_page();
 if (isset($_GET["hour"]))
